@@ -13,7 +13,7 @@ def simulate(bandit):
     expected_rewards_approx.append(-10)
     shuffle(expected_rewards_approx)
     for _ in range(10000):
-        for arm_index in range(6):
+        for arm_index in range(6): 
             acc_rewards[arm_index] = acc_rewards[arm_index] + generate_reward(arm_index, expected_rewards_approx)
 
     #print('Reward comparison of the different arms:')

@@ -50,7 +50,7 @@ class Bandit:
             mean = statistics.mean(self.expected_values)
             stdev = statistics.stdev(self.expected_values)
             criterion = 1.0/(2*len(self.expected_values))
-            distanceList = []
+            distanceList = [] 
             for i in range(len(self.expected_values)):
                 distanceList.append(math.erfc(abs(self.expected_values[i]-mean) / stdev))
             for i in range(len(distanceList)):

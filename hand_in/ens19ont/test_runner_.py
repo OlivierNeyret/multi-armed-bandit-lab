@@ -17,7 +17,7 @@ def simulate():
         print('Frequencies')
         print(bandit.bandit.frequencies)
 
-        ref_plus_bonus = ref_bandit_reward * 1.2
+        ref_plus_bonus = ref_bandit_reward * 1.2 
         result = 0
         if (bandit_reward > ref_plus_bonus):
             result = 1
